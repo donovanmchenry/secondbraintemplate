@@ -11,6 +11,11 @@ optional terminal wizard can also create it.
 - Roles that matter to me: [ROLE OR SHORT DESCRIPTION]
 - Timezone: [TIMEZONE]
 
+## Workspace Identity
+
+- Second brain name: [CONFIRMED NAME OR NOT CHOSEN YET]
+- Icon concept: [CONFIRMED VISUAL METAPHOR OR PENDING]
+
 ## What Second Brain Should Help With
 
 - [WHAT SHOULD BECOME EASIER TO REMEMBER, ORGANIZE, OR DECIDE]

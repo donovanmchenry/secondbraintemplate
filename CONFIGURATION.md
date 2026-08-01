@@ -8,8 +8,10 @@ Open the Second Brain folder in Codex or another file-aware assistant and say:
 
 The assistant must follow [the guided onboarding](ONBOARDING.md). It will ask a few
 questions at a time, explain the privacy boundary, summarize what it understood, and
-wait for confirmation before creating personal files. No terminal, Node.js, npm, Git,
-or Obsidian setup is required.
+wait for confirmation before creating personal files. It will also ask for the second
+brain's name and follow the [branding workflow](BRANDING.md) to create a similarly
+styled custom icon when image generation is available. No terminal, Node.js, npm,
+Git, or Obsidian setup is required.
 
 The onboarding is not finished when files exist. The assistant will also help with
 one real starter outcome—usually planning the top priority, organizing one project,
@@ -29,10 +31,11 @@ If you prefer a command line and already have Node.js 20 or newer, run:
 npm run setup
 ```
 
-The wizard asks only for a preferred name, broad role, timezone, current focus, and
-communication preference. Its answers stay in gitignored local files. Edit `USER.md`
-and `NOW.md` directly at any time; both are ordinary Markdown. The terminal wizard is
-a basic fallback and does not replace the richer guided conversation.
+The wizard asks for the second brain's name, a preferred name, broad role, timezone,
+purpose, current focus, collaboration preferences, and privacy boundaries. Its
+answers stay in gitignored local files. Edit `USER.md` and `NOW.md` directly at any
+time; both are ordinary Markdown. The terminal wizard is a basic fallback and does
+not generate the icon or replace the richer guided conversation.
 
 ## Connect Projects
 
@@ -75,7 +78,8 @@ When creating a new second brain from this template:
 
 1. Remove all owner-specific files and confirm `USER.md` and `NOW.md` are absent.
 2. Keep the first-run gate in `AGENTS.md` and the full `ONBOARDING.md` workflow.
-3. Replace branding without weakening the privacy defaults.
+3. Keep `BRANDING.md` and the neutral template icon so the new owner receives a
+   matching custom icon after choosing a name.
 4. Test from a fresh copy by asking the assistant to set it up. The assistant should
    begin with questions, not installation commands.
 5. Do not call the test complete until the assistant creates confirmed local context

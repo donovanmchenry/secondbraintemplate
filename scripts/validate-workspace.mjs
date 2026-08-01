@@ -12,7 +12,9 @@ const required = [
   "AGENTS.md",
   "README.md",
   "CONFIGURATION.md",
+  "BRANDING.md",
   "Dashboard.md",
+  "assets/second-brain-template-icon.png",
   "ONBOARDING.md",
   "USER.example.md",
   "NOW.example.md",
@@ -45,6 +47,21 @@ function walk(directory) {
 
 for (const relative of required) {
   if (!fs.existsSync(path.join(root, relative))) errors.push(`Missing required file: ${relative}`);
+}
+
+const templateIconPath = path.join(root, "assets", "second-brain-template-icon.png");
+if (fs.existsSync(templateIconPath)) {
+  const icon = fs.readFileSync(templateIconPath);
+  const pngSignature = "89504e470d0a1a0a";
+  if (icon.subarray(0, 8).toString("hex") !== pngSignature) {
+    errors.push("assets/second-brain-template-icon.png is not a valid PNG");
+  } else {
+    const width = icon.readUInt32BE(16);
+    const height = icon.readUInt32BE(20);
+    if (width !== 1024 || height !== 1024) {
+      errors.push(`Template icon is ${width}x${height}; expected 1024x1024`);
+    }
+  }
 }
 
 const allFiles = walk(root);
@@ -106,6 +123,9 @@ if (!agentGuide.includes("ONBOARDING.md")) {
 }
 if (!agentGuide.includes("Do not require Node.js, npm, Obsidian, Git")) {
   errors.push("AGENTS.md does not protect no-tool onboarding");
+}
+if (!agentGuide.includes("BRANDING.md")) {
+  errors.push("AGENTS.md does not route naming and icon work to BRANDING.md");
 }
 
 const gitFiles = spawnSync("git", ["-C", root, "ls-files", "-z"], { encoding: "utf8" });

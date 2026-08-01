@@ -28,10 +28,11 @@ if (flags.has("help")) {
 Usage:
   npm run setup
   node scripts/setup.mjs --defaults [--force]
-  node scripts/setup.mjs --name "Name" --role "Role" --focus "Focus"
+  node scripts/setup.mjs --name "Name" --brain-name "Brain Name" --focus "Focus"
 
 Options:
   --name            Preferred name
+  --brain-name      Name for this second brain
   --role            Broad role or short self-description
   --timezone        IANA timezone, such as America/New_York
   --purpose         What Second Brain should make easier
@@ -91,6 +92,11 @@ console.log("\nSecond Brain keeps these answers in gitignored local files by def
 
 const detectedTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone || "UTC";
 const name = await ask("name", "Preferred name", "Your name");
+const brainName = await ask(
+  "brain-name",
+  "What should this second brain be called",
+  "My Second Brain",
+);
 const role = await ask("role", "What do you do, in a few words", "Not set yet");
 const timezone = await ask("timezone", "Timezone", detectedTimezone);
 const purpose = await ask(
@@ -133,6 +139,11 @@ compact and update it only with durable, user-confirmed information.
 - What I do: ${role}
 - Timezone: ${timezone}
 
+## Workspace Identity
+
+- Second brain name: ${brainName}
+- Icon concept: Pending guided branding
+
 ## Current Focus
 
 - ${focus}
@@ -151,7 +162,7 @@ compact and update it only with durable, user-confirmed information.
 
 ## Workspace Purpose
 
-Second Brain is my file-based second brain for personal context, projects, current
+${brainName} is my file-based second brain for personal context, projects, current
 priorities, and durable knowledge.
 
 ## Privacy
@@ -208,7 +219,8 @@ Setup complete.
 
 Next:
   1. Review USER.md and NOW.md, then open Dashboard.md.
-  2. In Codex, say: "Continue onboarding and help me plan: ${focus}."
-  3. Complete one useful starter session before adding more structure.
-  4. Read CONFIGURATION.md before syncing personal information.
+  2. In Codex, say: "Continue onboarding and create a matching icon for ${brainName}."
+  3. Then say: "Help me plan: ${focus}."
+  4. Complete one useful starter session before adding more structure.
+  5. Read CONFIGURATION.md before syncing personal information.
 `);

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/second-brain-icon.svg" alt="Second Brain template icon" width="180">
+  <img src="assets/second-brain-template-icon.png" alt="Second Brain template icon" width="240">
 </p>
 
 # Second Brain Template
@@ -21,9 +21,11 @@ No developer tools are required for the recommended setup.
    AI assistant.
 3. Say: **“Set up this second brain with me.”**
 
-The assistant will begin a short conversation about what matters to you, how you want
-to work together, your current priorities, and your privacy boundaries. It will show
-you a summary before creating your local profile, then help you complete one useful
+The assistant will begin a short conversation about what the second brain should be
+called, what matters to you, how you want to work together, your current priorities,
+and your privacy boundaries. When image generation is available, it will also create
+a custom icon in the same glossy 3D visual family as the neutral template icon. It
+will show you a summary before creating files, then help you complete one useful
 starter task. It should not ask you to install Node.js, npm, Git, or Obsidian.
 
 After setup, open `Dashboard.md` in any Markdown editor. The folder can also be opened
@@ -60,6 +62,7 @@ Running setup again will not overwrite those files unless you explicitly confirm
 - `runtime/` — local automation status.
 - `AGENTS.md` — operating rules for AI assistants.
 - `ONBOARDING.md` — required first-run interview and completion checklist.
+- `BRANDING.md` — naming and matching-icon workflow.
 
 ## Privacy Before Syncing
 

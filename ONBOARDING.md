@@ -28,8 +28,8 @@ Begin in your own natural voice with the substance of:
 > nothing to install first. Your personal profile and current priorities stay local
 > by default. I’ll show you a summary before saving anything.
 
-Then ask for the preferred name and what the owner most wants this second brain to
-help with.
+Then ask for the preferred name, what the second brain should be called, and what the
+owner most wants it to help with.
 
 ## Resuming an Existing Setup
 
@@ -47,6 +47,8 @@ the answers; do not recite the list mechanically.
 ### 1. Owner and Purpose
 
 - Preferred name and how they want to be addressed.
+- The second brain's name. If the owner is unsure, propose three short names grounded
+  in its purpose and let the owner choose or defer.
 - A broad description of what they do or the roles that matter to them.
 - What they want Second Brain to make easier, remember, organize, or help decide.
 - Timezone only when scheduling or date-sensitive work is relevant.
@@ -87,6 +89,7 @@ Do not treat every interest as a priority. Help the owner narrow the list when n
 Present a compact summary under these headings:
 
 - About you
+- Second brain name and proposed icon concept
 - What Second Brain should help with
 - Right now
 - How we should work together
@@ -107,8 +110,12 @@ After approval:
 4. Create tracked project profiles only for non-sensitive information the owner has
    approved for syncing. Otherwise keep the project in local notes until the sync
    model is clear.
-5. Keep the files readable and compact. Do not preserve the interview transcript.
-6. Review the resulting files for assumptions, sensitive information, and accidental
+5. Follow `BRANDING.md`: apply the confirmed name to the visible workspace titles and,
+   when image generation is available, create a matching custom icon. Show the icon
+   to the owner before treating it as final. If generation is unavailable, retain the
+   neutral template icon and record branding as a non-blocking follow-up.
+6. Keep the files readable and compact. Do not preserve the interview transcript.
+7. Review the resulting files for assumptions, sensitive information, and accidental
    exposure.
 
 ## First Useful Session
@@ -132,9 +139,11 @@ step in `NOW.md` and tell them how to resume.
 Onboarding is complete only when:
 
 - the owner approved the profile and privacy boundary;
+- the second brain has a confirmed name or an explicitly deferred naming decision;
 - `USER.md` and `NOW.md` exist;
 - the most important priority has a concrete next action;
 - the owner knows what is local-only versus tracked or synced;
 - one starter workflow was completed, started, or deliberately deferred;
+- custom icon generation was completed or recorded as an optional follow-up;
 - the assistant gives three relevant example requests based on the owner's actual
   goals, not generic product documentation.

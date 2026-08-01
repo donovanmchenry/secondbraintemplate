@@ -41,6 +41,7 @@ After setup, try one of these in your own words:
 - [Automation runtime](runtime/README.md)
 - [Configuration guide](CONFIGURATION.md)
 - [Guided onboarding](ONBOARDING.md)
+- [Branding and icon guide](BRANDING.md)
 
 ## Guardrails
 
