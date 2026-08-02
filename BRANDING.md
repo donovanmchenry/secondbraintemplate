@@ -22,7 +22,7 @@ reference. A custom icon should preserve these traits:
 - square 1024×1024 transparent PNG with fully transparent corners;
 - one centered, connected character silhouette with generous padding;
 - an unmistakable face that remains expressive at 64 pixels;
-- bold brows, large glossy eyes, and a confident or friendly asymmetric smile;
+- softly arched expressive brows, large bright glossy eyes, and a warm smile;
 - premium rounded 3D volume with crisp pearly highlights;
 - tactile, highly polished, vaguely iOS-emoji-like rendering;
 - a subject and two- or three-color palette derived from the confirmed name;
@@ -63,7 +63,7 @@ Use case: logo-brand
 Asset type: transparent square second-brain character icon and future pet reference
 Input image: the template mascot is a character-family style reference only
 Primary request: create a character for “[CONFIRMED NAME]” represented by [SUBJECT]
-Face: bold expressive brows, large glossy eyes, confident asymmetric smile
+Face: softly arched expressive brows, large bright glossy eyes, warm confident smile
 Style: premium rounded glossy 3D emoji-like character with crisp pearly highlights
 Composition: one centered connected silhouette, generous padding, readable at 64px
 Palette: [TWO OR THREE COLORS DERIVED FROM THE NAME OR PURPOSE]
