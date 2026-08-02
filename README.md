@@ -24,9 +24,10 @@ No developer tools are required for the recommended setup.
 The assistant will begin a short conversation about what the second brain should be
 called, what matters to you, how you want to work together, your current priorities,
 and your privacy boundaries. When image generation is available, it will also create
-a custom icon in the same glossy 3D visual family as the neutral template icon. It
-will show you a summary before creating files, then help you complete one useful
-starter task. It should not ask you to install Node.js, npm, Git, or Obsidian.
+a transparent, expressive 3D character icon in the same visual family as the template
+mascot. After approval, it will offer to turn that character into an animated Codex
+pet. It will show you a summary before creating files, then help you complete one
+useful starter task. It should not ask you to install Node.js, npm, Git, or Obsidian.
 
 After setup, open `Dashboard.md` in any Markdown editor. The folder can also be opened
 as an [Obsidian](https://obsidian.md/) vault, but Obsidian is optional and is not the

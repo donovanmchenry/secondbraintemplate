@@ -58,8 +58,12 @@ if (fs.existsSync(templateIconPath)) {
   } else {
     const width = icon.readUInt32BE(16);
     const height = icon.readUInt32BE(20);
+    const colorType = icon[25];
     if (width !== 1024 || height !== 1024) {
       errors.push(`Template icon is ${width}x${height}; expected 1024x1024`);
+    }
+    if (![4, 6].includes(colorType)) {
+      errors.push("Template icon does not contain a PNG alpha channel");
     }
   }
 }
@@ -126,6 +130,14 @@ if (!agentGuide.includes("Do not require Node.js, npm, Obsidian, Git")) {
 }
 if (!agentGuide.includes("BRANDING.md")) {
   errors.push("AGENTS.md does not route naming and icon work to BRANDING.md");
+}
+
+const brandingGuide = fs.readFileSync(path.join(root, "BRANDING.md"), "utf8");
+if (!brandingGuide.includes("hatch-pet")) {
+  errors.push("BRANDING.md does not offer the optional hatch-pet workflow");
+}
+if (!brandingGuide.includes("spriteVersionNumber: 2")) {
+  errors.push("BRANDING.md does not require the complete v2 pet format");
 }
 
 const gitFiles = spawnSync("git", ["-C", root, "ls-files", "-z"], { encoding: "utf8" });

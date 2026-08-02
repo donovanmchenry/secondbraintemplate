@@ -143,6 +143,7 @@ compact and update it only with durable, user-confirmed information.
 
 - Second brain name: ${brainName}
 - Icon concept: Pending guided branding
+- Animated pet: Not offered yet
 
 ## Current Focus
 
@@ -219,7 +220,7 @@ Setup complete.
 
 Next:
   1. Review USER.md and NOW.md, then open Dashboard.md.
-  2. In Codex, say: "Continue onboarding and create a matching icon for ${brainName}."
+  2. In Codex, say: "Continue onboarding, create a matching icon for ${brainName}, and offer the pet option."
   3. Then say: "Help me plan: ${focus}."
   4. Complete one useful starter session before adding more structure.
   5. Read CONFIGURATION.md before syncing personal information.

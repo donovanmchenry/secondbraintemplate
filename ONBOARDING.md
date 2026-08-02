@@ -111,9 +111,10 @@ After approval:
    approved for syncing. Otherwise keep the project in local notes until the sync
    model is clear.
 5. Follow `BRANDING.md`: apply the confirmed name to the visible workspace titles and,
-   when image generation is available, create a matching custom icon. Show the icon
-   to the owner before treating it as final. If generation is unavailable, retain the
-   neutral template icon and record branding as a non-blocking follow-up.
+   when image generation is available, create a matching transparent character icon.
+   Show the icon to the owner before treating it as final, then offer to turn the
+   approved character into an animated Codex pet. If image or pet generation is
+   unavailable, retain the template icon and record it as a non-blocking follow-up.
 6. Keep the files readable and compact. Do not preserve the interview transcript.
 7. Review the resulting files for assumptions, sensitive information, and accidental
    exposure.
@@ -145,5 +146,6 @@ Onboarding is complete only when:
 - the owner knows what is local-only versus tracked or synced;
 - one starter workflow was completed, started, or deliberately deferred;
 - custom icon generation was completed or recorded as an optional follow-up;
+- the optional animated-pet choice was offered and accepted, declined, or deferred;
 - the assistant gives three relevant example requests based on the owner's actual
   goals, not generic product documentation.

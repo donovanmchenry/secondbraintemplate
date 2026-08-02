@@ -17,8 +17,9 @@ personalize, start using, or build out Second Brain:
    files directly from confirmed answers.
 4. Explain the privacy boundary before retaining personal information.
 5. Confirm the proposed profile and priorities before writing them.
-6. Ask what the second brain should be called and follow `BRANDING.md` for its visual
-   identity. Image generation is optional and must not block the rest of setup.
+6. Ask what the second brain should be called and follow `BRANDING.md` for its
+   transparent character icon. After icon approval, offer the optional pet workflow.
+   Image or pet generation must not block the rest of setup.
 7. Complete one useful starter workflow with the user after configuration. Do not end
    setup by merely telling them to open Obsidian or read the documentation.
 

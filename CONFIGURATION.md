@@ -10,8 +10,9 @@ The assistant must follow [the guided onboarding](ONBOARDING.md). It will ask a 
 questions at a time, explain the privacy boundary, summarize what it understood, and
 wait for confirmation before creating personal files. It will also ask for the second
 brain's name and follow the [branding workflow](BRANDING.md) to create a similarly
-styled custom icon when image generation is available. No terminal, Node.js, npm,
-Git, or Obsidian setup is required.
+styled transparent character icon when image generation is available. After the icon
+is approved, the assistant will offer to hatch it as an animated Codex pet. No
+terminal, Node.js, npm, Git, or Obsidian setup is required.
 
 The onboarding is not finished when files exist. The assistant will also help with
 one real starter outcome—usually planning the top priority, organizing one project,
@@ -79,7 +80,7 @@ When creating a new second brain from this template:
 1. Remove all owner-specific files and confirm `USER.md` and `NOW.md` are absent.
 2. Keep the first-run gate in `AGENTS.md` and the full `ONBOARDING.md` workflow.
 3. Keep `BRANDING.md` and the neutral template icon so the new owner receives a
-   matching custom icon after choosing a name.
+   matching custom icon and optional pet after choosing a name.
 4. Test from a fresh copy by asking the assistant to set it up. The assistant should
    begin with questions, not installation commands.
 5. Do not call the test complete until the assistant creates confirmed local context
