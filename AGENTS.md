@@ -36,15 +36,18 @@ with the smallest useful question. Never make the user restart from zero.
 1. Apply the first-run gate before ordinary workspace work.
 2. Read `USER.md` when it exists and personal context or preferences matter.
 3. Read `NOW.md` when the task concerns current priorities or commitments.
-4. Start project discovery at `projects/index.md`.
-5. Start durable knowledge lookup at `wiki/index.md` and follow only relevant links.
-6. If setup has not run, treat `USER.example.md` and `NOW.example.md` only as blank
-   templates, never as facts about the user.
+4. Read `tasks/index.md` when it exists and the task concerns the longer-lived queue.
+5. Start project discovery at `projects/index.md`.
+6. Start durable knowledge lookup at `wiki/index.md` and follow only relevant links.
+7. If setup has not run, treat `USER.example.md`, `NOW.example.md`, and
+   `tasks/index.example.md` only as blank templates, never as facts about the user.
 
 ## Memory Rules
 
 - Update `USER.md` only with compact, durable, user-confirmed information.
 - Update `NOW.md` for short-lived priorities, open loops, and the next few outcomes.
+- Use local `tasks/index.md` only for an owner-confirmed longer-lived queue. Keep the
+  few active outcomes in `NOW.md`; do not duplicate the full queue there.
 - For durable facts, decisions, and relationships, follow `wiki/SCHEMA.md`.
 - Project source remains authoritative for current code and operational state.
 - Keep secrets, credentials, private message bodies, health details, financial data,
@@ -56,6 +59,8 @@ with the smallest useful question. Never make the user restart from zero.
 - `projects/index.md` is the tracked discovery map.
 - `projects/<project-id>.md` contains stable, non-sensitive project profiles.
 - `projects/local-paths.md` maps external projects to this machine and is gitignored.
+- `projects/local-codex-sessions.md` may hold private task IDs and links when needed;
+  it is gitignored and must never be copied into tracked profiles.
 - Do not move, rewrite, or combine independent repositories into Second Brain.
 
 ## Working Style

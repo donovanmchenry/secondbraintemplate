@@ -144,6 +144,7 @@ compact and update it only with durable, user-confirmed information.
 - Second brain name: ${brainName}
 - Icon concept: Pending guided branding
 - Animated pet: Not offered yet
+- Local task queue: Not discussed yet
 
 ## Current Focus
 

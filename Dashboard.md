@@ -8,6 +8,7 @@
 
 - [Current priorities](NOW.md) — outcomes, open loops, and next actions.
 - [User profile](USER.md) — confirmed personal context and working preferences.
+- [Longer-lived task queue](tasks/index.md) — optional, local-only backlog.
 
 If either link is missing, ask the assistant: **“Set up this second brain with me.”**
 The assistant will follow the [guided onboarding](ONBOARDING.md); no terminal or
@@ -27,6 +28,8 @@ After setup, try one of these in your own words:
 - [Project registry](projects/index.md)
 - [Project profile template](projects/project-template.md)
 - [Local path map](projects/local-paths.md) — optional and gitignored.
+- [Private Codex task map](projects/local-codex-sessions.md) — optional and
+  gitignored.
 
 ## Durable Memory
 
@@ -42,6 +45,7 @@ After setup, try one of these in your own words:
 - [Configuration guide](CONFIGURATION.md)
 - [Guided onboarding](ONBOARDING.md)
 - [Branding and icon guide](BRANDING.md)
+- [Optional task-queue guide](tasks/README.md)
 
 ## Guardrails
 

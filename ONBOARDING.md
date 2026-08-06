@@ -60,6 +60,9 @@ the answers; do not recite the list mechanically.
 - The smallest concrete next action for the most important priority.
 
 Do not treat every interest as a priority. Help the owner narrow the list when needed.
+If they have a larger backlog beyond the current three outcomes, briefly offer the
+optional local task queue. Do not create it merely because several interests were
+mentioned.
 
 ### 3. Collaboration Style
 
@@ -106,17 +109,20 @@ After approval:
 1. Create `USER.md` from the confirmed durable profile and preferences.
 2. Create `NOW.md` with no more than three priorities, concrete next actions, open
    loops, and a review date.
-3. Create `projects/local-paths.md` only when machine-specific locations are known.
-4. Create tracked project profiles only for non-sensitive information the owner has
+3. Create `tasks/index.md` from `tasks/index.example.md` only when the owner chooses a
+   longer-lived queue. Keep it local and separate from `NOW.md`.
+4. Create `projects/local-paths.md` only when machine-specific locations are known.
+   Create `projects/local-codex-sessions.md` only when private task routing is needed.
+5. Create tracked project profiles only for non-sensitive information the owner has
    approved for syncing. Otherwise keep the project in local notes until the sync
    model is clear.
-5. Follow `BRANDING.md`: apply the confirmed name to the visible workspace titles and,
+6. Follow `BRANDING.md`: apply the confirmed name to the visible workspace titles and,
    when image generation is available, create a matching transparent character icon.
    Show the icon to the owner before treating it as final, then offer to turn the
    approved character into an animated Codex pet. If image or pet generation is
    unavailable, retain the template icon and record it as a non-blocking follow-up.
-6. Keep the files readable and compact. Do not preserve the interview transcript.
-7. Review the resulting files for assumptions, sensitive information, and accidental
+7. Keep the files readable and compact. Do not preserve the interview transcript.
+8. Review the resulting files for assumptions, sensitive information, and accidental
    exposure.
 
 ## First Useful Session

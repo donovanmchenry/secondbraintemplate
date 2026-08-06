@@ -8,6 +8,8 @@ secrets/
 USER.md
 NOW.md
 projects/local-paths.md
+projects/local-codex-sessions.md
+tasks/index.md
 config/local.json
 
 # Local app and runtime state.

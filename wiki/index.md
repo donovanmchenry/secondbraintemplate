@@ -4,7 +4,8 @@ This is Second Brain's discovery map for durable facts, decisions, and relations
 here and follow only the links relevant to the current task.
 
 Read the local `USER.md` only when confirmed personal context matters. Short-lived
-status belongs in `NOW.md`, and current project state belongs in `projects/`.
+status belongs in `NOW.md`, an optional longer-lived queue belongs in local
+`tasks/index.md`, and current project state belongs in `projects/`.
 
 ## Durable Pages
 

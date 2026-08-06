@@ -12,6 +12,8 @@
 
 [ACTIVE, PAUSED, MAINTENANCE, OR UNKNOWN]
 
+Last reviewed: [YYYY-MM-DD OR NEVER]
+
 ## Repository
 
 - Remote: [REMOTE URL OR NONE]
@@ -22,6 +24,10 @@
 ## Authoritative Files
 
 - [README OR OTHER SOURCE]
+
+## Technologies
+
+- [CONFIRMED TECHNOLOGY OR OMIT THIS SECTION]
 
 ## Important Commands
 
@@ -43,6 +49,10 @@
 ## Confirmed Decisions
 
 - [DECISION]. Rationale: [RATIONALE]. Source: `[SOURCE]`
+
+## Caveats
+
+- [KNOWN LIMIT, PRIVACY BOUNDARY, OR NONE]
 
 ## Open Questions
 

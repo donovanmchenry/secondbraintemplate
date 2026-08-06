@@ -18,7 +18,10 @@ const required = [
   "ONBOARDING.md",
   "USER.example.md",
   "NOW.example.md",
+  "tasks/README.md",
+  "tasks/index.example.md",
   "projects/index.md",
+  "projects/local-codex-sessions.example.md",
   "wiki/index.md",
   "wiki/SCHEMA.md",
   "wiki/log.md",
@@ -27,11 +30,20 @@ const skippedDirectories = new Set([".git", ".obsidian", "node_modules", ".trash
 const optionalLocalFiles = new Set([
   "USER.md",
   "NOW.md",
+  "tasks/index.md",
   "projects/local-paths.md",
+  "projects/local-codex-sessions.md",
   "config/local.json",
   "runtime/automation-status.md",
 ]);
-const privateByDefault = ["USER.md", "NOW.md", "projects/local-paths.md", "config/local.json"];
+const privateByDefault = [
+  "USER.md",
+  "NOW.md",
+  "tasks/index.md",
+  "projects/local-paths.md",
+  "projects/local-codex-sessions.md",
+  "config/local.json",
+];
 const textExtensions = new Set([".md", ".json", ".mjs", ".yml", ".yaml", ".svg"]);
 
 function walk(directory) {
@@ -108,6 +120,8 @@ if (fs.existsSync(path.join(root, "projects", "index.md"))) {
     "project-template.md",
     "local-paths.md",
     "local-paths.example.md",
+    "local-codex-sessions.md",
+    "local-codex-sessions.example.md",
   ]);
   const projectProfiles = fs.readdirSync(path.join(root, "projects"))
     .filter((name) => name.endsWith(".md") && !excludedProjects.has(name));
@@ -130,6 +144,16 @@ if (!agentGuide.includes("Do not require Node.js, npm, Obsidian, Git")) {
 }
 if (!agentGuide.includes("BRANDING.md")) {
   errors.push("AGENTS.md does not route naming and icon work to BRANDING.md");
+}
+if (!agentGuide.includes("tasks/index.md")) {
+  errors.push("AGENTS.md does not distinguish the optional longer-lived task queue");
+}
+
+const wikiSchema = fs.readFileSync(path.join(root, "wiki", "SCHEMA.md"), "utf8");
+for (const requirement of ["Uncertain", "Contradiction", "Stale", "## Lint Workflow"]) {
+  if (!wikiSchema.includes(requirement)) {
+    errors.push(`wiki/SCHEMA.md is missing required knowledge-maintenance rule: ${requirement}`);
+  }
 }
 
 const brandingGuide = fs.readFileSync(path.join(root, "BRANDING.md"), "utf8");

@@ -16,6 +16,7 @@ optional terminal wizard can also create it.
 - Second brain name: [CONFIRMED NAME OR NOT CHOSEN YET]
 - Icon concept: [CONFIRMED VISUAL METAPHOR OR PENDING]
 - Animated pet: [ACCEPTED, DECLINED, DEFERRED, OR NOT OFFERED YET]
+- Local task queue: [ENABLED, DECLINED, DEFERRED, OR NOT DISCUSSED]
 
 ## What Second Brain Should Help With
 

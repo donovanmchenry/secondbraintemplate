@@ -47,11 +47,24 @@ For a repository outside Second Brain, copy `projects/local-paths.example.md` to
 `projects/local-paths.md` and record its machine-specific path there. This file is
 gitignored. Never move another repository into Second Brain just to connect it.
 
+If a project is continued through a private Codex task, copy
+`projects/local-codex-sessions.example.md` to `projects/local-codex-sessions.md` and
+store its local path, task ID, and task link there. The real map is gitignored; never
+put those identifiers in tracked project profiles.
+
+## Optional Longer-Lived Tasks
+
+Keep the immediate few outcomes in `NOW.md`. If the owner also needs a broader queue,
+copy `tasks/index.example.md` to `tasks/index.md`. The real queue is gitignored by
+default and uses stable task IDs so conversations can refer to items without turning
+the wiki into a task dump.
+
 ## Add Durable Knowledge
 
 Start at `wiki/index.md` and follow `wiki/SCHEMA.md`. A good durable note states the
-claim, whether it is confirmed or inferred, and where it came from. Current tasks and
-short-lived status belong in `NOW.md`, not the wiki.
+claim, whether it is confirmed or inferred, and where it came from. Current outcomes
+belong in `NOW.md`, an optional broader queue belongs in `tasks/index.md`, and neither
+belongs in the wiki.
 
 ## Choose a Sync Model
 
@@ -77,7 +90,8 @@ boundaries manually; missing tooling must not block setup.
 
 When creating a new second brain from this template:
 
-1. Remove all owner-specific files and confirm `USER.md` and `NOW.md` are absent.
+1. Remove all owner-specific files and confirm `USER.md`, `NOW.md`, `tasks/index.md`,
+   project path maps, and private Codex task maps are absent.
 2. Keep the first-run gate in `AGENTS.md` and the full `ONBOARDING.md` workflow.
 3. Keep `BRANDING.md` and the neutral template icon so the new owner receives a
    matching custom icon and optional pet after choosing a name.

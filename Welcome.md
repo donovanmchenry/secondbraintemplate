@@ -8,4 +8,6 @@ After onboarding, open the [Dashboard](Dashboard.md).
 
 Use the local [User Profile](USER.md) for confirmed personal context, the local
 [Now Page](NOW.md) for current priorities, the [Project Registry](projects/index.md)
-for project discovery, and the [Wiki Index](wiki/index.md) for durable knowledge.
+for project discovery, and the [Wiki Index](wiki/index.md) for durable knowledge. If
+you need a backlog beyond the few current outcomes, enable the optional local
+[Task Queue](tasks/index.md).

@@ -33,6 +33,10 @@ After setup, open `Dashboard.md` in any Markdown editor. The folder can also be 
 as an [Obsidian](https://obsidian.md/) vault, but Obsidian is optional and is not the
 end of the setup process.
 
+`NOW.md` keeps the immediate few outcomes visible. Owners with a larger backlog can
+optionally enable a separate gitignored task queue; private local paths and Codex task
+links also stay outside tracked project profiles.
+
 ## Optional Terminal Setup
 
 People who prefer a command line can use the basic setup script. This path requires
@@ -44,11 +48,14 @@ cd secondbraintemplate
 npm run setup
 ```
 
-Both setup paths create three gitignored files:
+The optional terminal setup creates three gitignored files:
 
 - `USER.md` — confirmed identity and working preferences.
 - `NOW.md` — current priorities and open loops.
 - `projects/local-paths.md` — machine-specific paths to other repositories.
+
+Guided onboarding can also create the optional local task queue and private Codex
+task map when they are useful; neither is required for setup.
 
 Running setup again will not overwrite those files unless you explicitly confirm it.
 
@@ -57,6 +64,7 @@ Running setup again will not overwrite those files unless you explicitly confirm
 - `Dashboard.md` — command center and navigation.
 - `USER.md` — private local profile created during setup.
 - `NOW.md` — private local priorities created during setup.
+- `tasks/` — optional private longer-lived task queue and its blank tracked example.
 - `projects/` — project registry and reusable profile template.
 - `wiki/` — durable, sourced knowledge and decisions.
 - `outputs/` — local reviewable reports.
@@ -68,8 +76,9 @@ Running setup again will not overwrite those files unless you explicitly confirm
 ## Privacy Before Syncing
 
 The starter repository contains no personal profile or private source material.
-`USER.md`, `NOW.md`, local paths, runtime state, and generated reports are ignored by
-Git. The validator also rejects them if they are accidentally force-added.
+`USER.md`, `NOW.md`, the optional task queue, private task routing, local paths,
+runtime state, and generated reports are ignored by Git. The validator also rejects
+private configuration files if they are accidentally force-added.
 
 The durable wiki and project profiles are tracked so they can be portable. Do not put
 private information in those tracked files while the repository is public. If the
